@@ -3,7 +3,7 @@
 :root {
     --bg-color: #222222;
     --primary: #fafafa;
-    --secondary: #dddddd;
+    --secondary: #444444;
     --blue: #2b6aff;
     --pink-red: #ea384c;
 }
@@ -32,4 +32,34 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
+}
+
+.post--card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    border: 2px solid var(--secondary);
+    padding: 10px;
+    font-size: .8rem;
+    font-weight: 300;
+    letter-spacing: .03rem;
+}
+.post--card a {
+    text-decoration: none;
+    color: var(--primary);
+    transition: .3s color;
+}
+.post--card a:hover {
+    color: var(--secondary);
+}
+.post--title {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    font-size: 1.1rem;
+}
+.post--link {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    font-size: 1.1rem;
 }
