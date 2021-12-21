@@ -1,0 +1,35 @@
+@import url('https://rsms.me/inter/inter.css');
+
+:root {
+    --bg-color: #222222;
+    --primary: #fafafa;
+    --secondary: #dddddd;
+    --blue: #2b6aff;
+    --pink-red: #ea384c;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--primary);
+}
+
+.app {
+    width: 80vw;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.header .logo img {
+    width: 200px;
+}
+
+.posts {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
